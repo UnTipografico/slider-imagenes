@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de imagenes con Flexslider</title>
+    <!-- Css Flexlsider -->
+    <link rel="stylesheet" href="./assets/css/flexslider.css">
+    <!-- Hoja de estilos propia -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="carruselImagenes" id="carrusel">
+        <ul class="slides">
+            <li>
+                <picture>
+                    <!-- La primera fuente es para pantallas con un ancho mínimo de 600px -->
+                    <source media="(min-width: 600px)" srcset="./assets/img/01.desktop.png">
+                    <!-- La segunda fuente es para pantallas con un ancho mínimo de 480px -->
+                    <source media="(min-width: 480px)" srcset="./assets/img/01.mobile.png">
+                    <!-- Si ninguna de las fuentes anteriores coincide, se carga esta imagen para pantallas más pequeñas -->
+                    <img src="./assets/img/01.mobile.png" alt="Black friday special offer">
+                  </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- La primera fuente es para pantallas con un ancho mínimo de 600px -->
+                    <source media="(min-width: 600px)" srcset="./assets/img/02.desktop.png">
+                    <!-- La segunda fuente es para pantallas con un ancho mínimo de 480px -->
+                    <source media="(min-width: 480px)" srcset="./assets/img/02.mobile.png">
+                    <!-- Si ninguna de las fuentes anteriores coincide, se carga esta imagen para pantallas más pequeñas -->
+                    <img src="./assets/img/02.mobile.png" alt="Black friday special offer">
+                  </picture>
+            </li>
+            <li>
+                <picture>
+                    <!-- La primera fuente es para pantallas con un ancho mínimo de 600px -->
+                    <source media="(min-width: 600px)" srcset="./assets/img/03.desktop.png">
+                    <!-- La segunda fuente es para pantallas con un ancho mínimo de 480px -->
+                    <source media="(min-width: 480px)" srcset="./assets/img/03.mobile.png">
+                    <!-- Si ninguna de las fuentes anteriores coincide, se carga esta imagen para pantallas más pequeñas -->
+                    <img src="./assets/img/03.mobile.png" alt="Black friday special offer">
+                  </picture>
+            </li>
+        </ul>
+    </div>
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Script Flexslider-->
+    <script src="./assets/js/jquery.flexslider-min.js"></script>
+    <script>
+        $('#carrusel').flexslider({
+            animation: "slide",
+            directionNav: true, 
+        });
+    </script>
+</body>
+
+</html>
+
+

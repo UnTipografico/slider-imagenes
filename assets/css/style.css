@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.carruselImagenes{
+    position: relative;
+}
+.carruselImagenes img{
+    width: 100%;
+}
+.flex-control-nav{
+    bottom: 30px;
+}
+.flex-direction-nav a:before{
+    display: none;
+}
+.flex-direction-nav .flex-prev{
+    background: url(/assets/img/prev-arrow.svg) no-repeat;
+    left: 20px;
+    width: 40px;
+    height: 40px;
+    opacity: .5;
+    font-size: 0;
+}
+
+.flex-direction-nav .flex-prev:hover,
+.flex-direction-nav .flex-next:hover{
+    opacity: 1;
+}
+
+.flex-direction-nav .flex-next{
+    background: url(/assets/img/next-arrow.svg) no-repeat;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    opacity: .5;
+    font-size: 0;
+}
